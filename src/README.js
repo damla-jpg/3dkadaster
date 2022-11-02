@@ -1,16 +1,12 @@
 import React, { Suspense } from 'react'
-import { Canvas } from '@react-three/fiber'
-import { Stage } from '@react-three/drei'
 import { useLoader } from '@react-three/fiber'
 import { OBJLoader } from 'three-stdlib'
 import "./App.css"
-import Navbar from './Nav'
 
 
 export default function ReadMe(props) {
-    const obj = useLoader(OBJLoader, '/city_huge.obj')
     return (
-        <div>
+        <div className='App'>
             <p>3D Kadaster is a project by Bugra Kaya, Damla Ural and Radu Apsan.
                 Due to the fact that React sometimes struggles with loading 
                 big 3D objects it can take a couple seconds for the program to load.
